@@ -33,7 +33,7 @@ $(document).ready(function(){
         $('#contentLogin').hide();
         $('#contentSignin').show();
         $('#contentSignin').empty();
-        var text = $('<div align="center">Nome:<input type="text" id="nomeSU" value=""></br>Cognome:<input type="text" id="cognomeSU" value=""></br>Nickname:<input type="text" id="nickSU" value=""></br>E-Mail:<input type="text" id="emailSU" value=""></br>Password:<input type="password" id="passSU" value=""></br><button type="button" class="btn btn-primary navbar-btn" id="inviaSignin">INVIA</button></div>');
+        var text = $('<div align="center" style="display:none;"><table><tr><td>Nome:</td><td><input type="text" id="nomeSU" value=""></td></tr><tr><td>Cognome:</td><td><input type="text" id="cognomeSU" value=""></td></tr><tr><td>Nickname:</td><td><input type="text" id="nickSU" value=""></td></tr><tr><td>E-Mail:</td><td><input type="text" id="emailSU" value=""></td></tr><tr><td>Password:</td><td><input type="password" id="passSU" value=""></td></tr></table></br><button type="button" class="btn btn-primary navbar-btn" id="inviaSignin">INVIA</button></div>');
         $('#contentSignin').append(text);
         $('#inviaSignin').click(function() {
             var nick = $('#nickSU').val();
